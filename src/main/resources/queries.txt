@@ -1,0 +1,23 @@
+CREATE SCHEMA onlineShop
+CREATE TABLE onlineShop.products (id serial, title varchar(100), price int, PRIMARY KEY (id));
+
+INSERT INTO onlineShop.products (title, price) VALUES ('product1', 1120);
+INSERT INTO onlineShop.products (title, price)  VALUES ('product2', 2210);
+INSERT INTO onlineShop.products (title, price)  VALUES ('product3', 5321);
+INSERT INTO onlineShop.products (title, price)  VALUES ('product4', 12350);
+INSERT INTO onlineShop.products (title, price)  VALUES ('product5', 15211);
+INSERT INTO onlineShop.products (title, price)  VALUES ('product6', 15302);
+INSERT INTO onlineShop.products (title, price)  VALUES ('product7', 1513303);
+INSERT INTO onlineShop.products (title, price)  VALUES ('product8', 4);
+INSERT INTO onlineShop.products (title, price)  VALUES ('product9', 399);
+INSERT INTO onlineShop.products (title, price)  VALUES ('product10', 119);
+INSERT INTO onlineShop.products (title, price)  VALUES ('product11', 1260);
+INSERT INTO onlineShop.products (title, price)  VALUES ('product12', 25020);
+INSERT INTO onlineShop.products (title, price)  VALUES ('product13', 151121);
+INSERT INTO onlineShop.products (title, price)  VALUES ('product14', 9021);
+INSERT INTO onlineShop.products (title, price)  VALUES ('product15', 15);
+INSERT INTO onlineShop.products (title, price)  VALUES ('product16', 21014);
+INSERT INTO onlineShop.products (title, price)  VALUES ('product17', 222);
+INSERT INTO onlineShop.products (title, price)  VALUES ('product18', 333);
+INSERT INTO onlineShop.products (title, price)  VALUES ('product19', 332);
+INSERT INTO onlineShop.products (title, price)  VALUES ('product20', 331);

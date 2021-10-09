@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" th:href="@{/style.css}">
+    <title>Products</title>
+</head>
+<body>
+<h1>Products</h1>
+<table>
+    <tr>
+        <th>id</th>
+        <th>title</th>
+        <th>price</th>
+    </tr>
+    <tr th:each="product:${products}">
+        <td th:utext="${product.id}"></td>
+        <td th:utext="${product.title}"></td>
+        <td th:utext="${product.price}"></td>
+        <td>
+            <a th:href="@{/app/products/mvc/delete(id=${product.id})}" class="button">DELETE</a>
+        </td>
+    </tr>
+</table>
+<div th:each="pageNumber : ${pages}" class="pagination">
+    <a th:href="@{/app/products/mvc(page=${pageNumber})}"
+       th:text="${pageNumber + 1}">
+    </a>
+</div>
+</body>
+</html>
